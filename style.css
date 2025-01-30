@@ -8,5 +8,94 @@ body {
 }
 
 .card {
+    background-color: rgba(244, 239, 255, 0.57);
+    border-radius: 10px;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.personal-details {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+    
+}
+
+.name-email-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#fullName {
+    font-size: 1.5em; 
+    font-weight: bold; 
+    
+}
+
+#emailAddress {
+    font-style: italic;
+}
+
+#currentLocation {
+    font-style: italic;
+}
+
+#jobTitle {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.shortBio {
+    border: 1px solid rgba(82, 70, 105, 1);
+    border-radius: 12px;
+    background-color: rgba(82, 70, 105, 1);
+    padding: 16px;
+    color: white;
+    line-height: 1.4em;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+    width: 70%;
+}
+
+.social-links a {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-links img {
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 600px) {
+    .card > img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .card {
+        width: 90%;
+        padding: 10px;
+    }
 
 }
