@@ -2,6 +2,7 @@ body {
     background-color: rgba(25, 4, 67, 0.54);
     display: flex;
     justify-content: center;
+    font-family: 'Roboto', sans-serif;
     align-items: center;
     height: 100vh;
     margin: 0;
@@ -26,6 +27,14 @@ body {
     flex-direction: column;
     gap: 8px
     
+}
+
+.timeContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    font-size: 1.5em; 
+    font-weight: bold; 
 }
 
 .name-email-container {

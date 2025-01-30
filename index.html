@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <title>Tats | Profile Card</title>
 </head>
 <body>
     <div class="card">
-        <img data-testid="profilePicture" src="./assets/images/PFP.png" alt="A photo of Tats" width="107" height="107"/>
+            <div class="timeContainer">
+                <span id="currentTime"></span>
+            </div>
+            <img data-testid="profilePicture" src="./assets/images/PFP.png" alt="A photo of Tats" width="107" height="107"/>
         <div class="personal-details">
                 <span data-testid="fullName" id="fullName">Osotatanekeeni Ethelbert Kari (Tats)</span>
                 <span data-testid="emailAddress" id="emailAddress">tatanekari52@gmail.com</span>
@@ -37,5 +44,6 @@
             </a>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
